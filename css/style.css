@@ -398,3 +398,13 @@ main {
     rotate: 360deg;
   }
 }
+
+.whatsapp-img {
+  width: 27px;
+  margin-right: 8px;
+}
+
+.or {
+  margin: 10px 0px;
+  text-align: center;
+}
