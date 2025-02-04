@@ -24,13 +24,15 @@ const handleFormSubmit = async (
   nameField,
   emailField,
   phoneField,
-  privacyField
+  privacyField,
+  dateField
 ) => {
   const templateParams = {
     user_name: document.getElementById(nameField).value,
     user_email: document.getElementById(emailField).value,
     contact_number: document.getElementById(phoneField).value,
     privacy_check: document.getElementById(privacyField).value,
+    date: document?.getElementById(dateField)?.value,
     ip_address: await getIpAddress(),
     website_url: window.location.href,
     to_email: "harsh.autowebbed@gmail.com",
@@ -64,7 +66,8 @@ window.onload = function () {
         "user_name",
         "user_email",
         "contact_number",
-        "privacy_check"
+        "privacy_check",
+        "date"
       );
     });
 
@@ -77,7 +80,8 @@ window.onload = function () {
         "user_name_modal",
         "user_email_modal",
         "contact_number_modal",
-        "privacy_check_modal"
+        "privacy_check_modal",
+        "date_modal"
       );
     });
 };

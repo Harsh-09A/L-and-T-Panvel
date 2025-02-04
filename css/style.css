@@ -85,13 +85,10 @@ main {
 
 @media screen and (max-width: 600px) {
   .carousel-item .banner1 {
-    content: url("../img/banners/mobile_banner01.jpg");
+    content: url("../img/banners/mobile_banner1.jpg");
   }
   .carousel-item .banner2 {
-    content: url("../img/banners/mobile_banner02.jpg");
-  }
-  .carousel-item .banner3 {
-    content: url("../img/banners/mobile_banner03.jpg");
+    content: url("../img/banners/mobile_banner2.jpg");
   }
 }
 
@@ -180,6 +177,17 @@ main {
   text-decoration: none;
   color: var(--colorWhite);
 }
+
+/* .config_price {
+  width: 100%;
+} */
+
+.pricepop {
+  text-decoration: none;
+  color: var(--colorPrimary);
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
 /* amenities */
 
 .amenities-card {
@@ -266,7 +274,12 @@ main {
 .location-features .row .col {
   font-size: 1.9rem !important;
 }
-
+.locfec {
+  font-size: 1.15em;
+}
+.fa-location-dot {
+  color: var(--colorPrimary) !important;
+}
 /* About */
 #about_section {
   background-color: #0c3845;
@@ -320,4 +333,68 @@ main {
   background-color: var(--colorPrimary) !important;
   border: none !important;
   color: var(--colorWhite);
+}
+
+/*  */
+
+.AnimatePrice {
+  display: inline-block;
+  padding: 2px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 14px;
+  background: rgba(167, 134, 85, 0.2);
+  transition: 1s linear;
+}
+.AnimatePrice::before {
+  animation-name: rotate;
+  animation-duration: 3s;
+  transform: scale(10);
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.AnimatePrice::before {
+  position: absolute;
+  content: "";
+  background: conic-gradient(
+    from 40deg at 50% 50%,
+    rgba(255, 255, 255, 0) 43%,
+    #a78655 100%
+  );
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  rotate: 0deg;
+}
+.enquireNowBtn {
+  padding: 6px 30px;
+  display: inline-block;
+  color: #a78655;
+}
+.AnimatePrice .enquireNowBtn {
+  position: relative;
+  color: #a78655;
+  background: #fff;
+}
+
+.enquireNowBtn {
+  background: #a78655;
+  text-align: center;
+  color: #fff;
+  border-radius: 12px;
+  font-size: 15px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 10px 13px;
+}
+
+@keyframes rotate {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
 }

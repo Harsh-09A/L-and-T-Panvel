@@ -13,7 +13,7 @@
     <meta name="robots" content="index, follow" />
 
     <!-- Favicon -->
-    <link rel="icon" href="img/logo/favicon.jpg" sizes="16x16" />
+    <link rel="icon" href="img/logo/favicon.ico" sizes="16x16" />
 
     <!-- Bootstrap CDN -->
     <link
@@ -30,6 +30,12 @@
       defer
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
       integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"></script>
+
+    <!-- Jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
       crossorigin="anonymous"></script>
 
     <!-- Font Awesome CDN -->
@@ -257,24 +263,43 @@
               </p>
             </div>
             <span class="info-tag-line p-2 text-primary-theme">
-              1 & 2 BHK Starting From
+              Premium 2, 3 & 4 BHK Homes Starts At
             </span>
-            <span class="info-price pb-3">₹ 41.50 Lacs Onwards </span>
+            <span class="info-price pb-3">₹ 1.15 Cr* Onwards </span>
 
             <!--  -->
-            <button
-              class="btn btn-outline-dark download_btn"
-              data-bs-toggle="modal"
-              data-bs-target="#popupModal">
-              <i class="fa-solid fa-download nav-icon"></i> Download Brochure
-            </button>
+            <div class="AnimatePrice">
+              <button
+                class="btn btn-outline-dark enquireNowBtn"
+                data-bs-toggle="modal"
+                data-bs-target="#popupModal">
+                <i class="fa-solid fa-download nav-icon"></i> Download Brochure
+              </button>
+            </div>
+
+            <!--  -->
+            <!-- <div class="AnimatePrice">
+              <div
+                class="enquireNowBtn formPopTrigger"
+                data-formtype="Download Plans"
+                data-configdetails="Master Plan"
+                data-redirect="masterplan">
+                <b>
+                  <span class="starting">&nbsp;</span>
+                  <span style="font-family: monospace"></span>&nbsp;
+                  <span class="actual_price" data-checkprice="Plans Unlocked"
+                    >Download Plans</span
+                  >
+                </b>
+              </div>
+            </div> -->
           </div>
         </div>
       </section>
       <!-- Overview Section Ends -->
 
       <!-- Gallery Section -->
-      <section id="gallery_section" class="container py-3 bg-body-tertiary">
+      <section id="gallery_section" class="container py-3">
         <h2 class="section-heading text-center text-uppercase pt-3">gallery</h2>
         <div class="section-content">
           <div class="container my-5 pb-3">
@@ -373,14 +398,25 @@
                 <div class="config-inner">
                   <h5>2 BHK</h5>
 
-                  <div
-                    class="config-price"
-                    data-bs-toggle="modal"
-                    data-bs-target="#popupModal">
-                    <a href="javascript:void(0)" class="pricepop">
-                      ₹ 1.59 Cr* Onwards
-                    </a>
+                  <div class="AnimatePrice">
+                    <button
+                      class="btn btn-outline-dark enquireNowBtn config_price"
+                      data-bs-toggle="modal"
+                      data-bs-target="#popupModal">
+                      <a class="pricepop"> ₹ 1.59 Cr* Onwards </a>
+                    </button>
                   </div>
+
+                  <!-- <div class="AnimatePrice">
+                    <div
+                      class="config-price enquireNowBtn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#popupModal">
+                      <a href="javascript:void(0)" class="pricepop">
+                        ₹ 1.59 Cr* Onwards
+                      </a>
+                    </div>
+                  </div> -->
                 </div>
               </div>
 
@@ -388,29 +424,47 @@
                 <div class="config-inner">
                   <h5>3 BHK</h5>
 
-                  <div
+                  <div class="AnimatePrice">
+                    <button
+                      class="btn btn-outline-dark enquireNowBtn config_price"
+                      data-bs-toggle="modal"
+                      data-bs-target="#popupModal">
+                      <a class="pricepop"> Click For Price </a>
+                    </button>
+                  </div>
+
+                  <!-- <div
                     class="config-price"
                     data-bs-toggle="modal"
                     data-bs-target="#popupModal">
                     <a href="javascript:void(0)" class="pricepop">
                       Click For Price
                     </a>
-                  </div>
+                  </div> -->
                 </div>
               </div>
 
               <div class="col-lg-4 col-xs-12">
                 <div class="config-inner">
-                  <h5>Jodi Flat</h5>
+                  <h5>4 BHK</h5>
 
-                  <div
+                  <div class="AnimatePrice">
+                    <button
+                      class="btn btn-outline-dark enquireNowBtn config_price"
+                      data-bs-toggle="modal"
+                      data-bs-target="#popupModal">
+                      <a class="pricepop"> Click For Price </a>
+                    </button>
+                  </div>
+
+                  <!-- <div
                     class="config-price"
                     data-bs-toggle="modal"
                     data-bs-target="#popupModal">
                     <a href="javascript:void(0)" class="pricepop">
                       Click For Price
                     </a>
-                  </div>
+                  </div> -->
                 </div>
               </div>
             </div>
@@ -435,7 +489,7 @@
                       background-image: url(./img/amenities/pool.jpg);
                     "></div>
                   <div class="title">
-                    <h4>Beach Pool</h4>
+                    <h4>swimming pool</h4>
                     <!-- <h5>Tranqueras 2016</h5> -->
                   </div>
                 </div>
@@ -446,10 +500,10 @@
                   <div
                     class="photo img2"
                     style="
-                      background-image: url(./img/amenities/cctv.jpg);
+                      background-image: url(./img/amenities/amphitheater.jpg);
                     "></div>
                   <div class="title">
-                    <h4>CCTV Cameras</h4>
+                    <h4>Amphitheater</h4>
                     <!-- <h5>Tranqueras 2017</h5> -->
                   </div>
                 </div>
@@ -460,10 +514,10 @@
                   <div
                     class="photo img3"
                     style="
-                      background-image: url(./img/amenities/elevator.jpg);
+                      background-image: url(./img/amenities/court.jpg);
                     "></div>
                   <div class="title">
-                    <h4>High-Speed Elevators</h4>
+                    <h4>Multipurpose Court</h4>
                     <!-- <h5>Tranqueras 2017</h5> -->
                   </div>
                 </div>
@@ -530,10 +584,10 @@
                   <div
                     class="photo img8"
                     style="
-                      background-image: url(./img/amenities/parking.jpg);
+                      background-image: url(./img/amenities/banquethall.jpg);
                     "></div>
                   <div class="title">
-                    <h4>Ample Parking Space</h4>
+                    <h4>Banquet Hall</h4>
                     <!-- <h5>Tranqueras 2017</h5> -->
                   </div>
                 </div>
@@ -554,7 +608,7 @@
           <div class="row mt-4">
             <div class="col-12">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7539.167696848663!2d72.892033!3d19.125904!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9ff5147c559%3A0x890f051383a65d7f!2sL%26T%20Realty%20Elixir%20Reserve%20Powai!5e0!3m2!1sen!2sin!4v1719398028926!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7548.813360639341!2d73.202297!3d18.913385!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7e50046351429%3A0x36665fef7a242efe!2sL%26T%20Realty%20Panvel!5e0!3m2!1sen!2sin!4v1738652339864!5m2!1sen!2sin"
                 width="100%"
                 height="400px"
                 style="border: 0"
@@ -639,22 +693,22 @@
                       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
                         <div class="col my-2 locfec">
                           <i class="fa-solid fa-location-dot"></i>
-                          JVLR – 3 mins
+                          Mumbai-Pune Expressway - 10 mins
                         </div>
 
                         <div class="col my-2 locfec">
                           <i class="fa-solid fa-location-dot"></i>
-                          International Airport, Terminal 2 – 16 mins*
+                          Panvel Railway Station - 5 mins
                         </div>
 
                         <div class="col my-2 locfec">
                           <i class="fa-solid fa-location-dot"></i>
-                          Sakinaka Metro Rail – 10 mins*
+                          Navi Mumbai International Airport - 20 mins
                         </div>
 
                         <div class="col my-2 locfec">
                           <i class="fa-solid fa-location-dot"></i>
-                          Eastern & Western Expressway – 21 mins*
+                          Sion-Panvel Highway - 7 mins
                         </div>
                       </div>
                     </div>
@@ -671,22 +725,17 @@
                       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
                         <div class="col my-2 locfec">
                           <i class="fa-solid fa-location-dot"></i>
-                          A.M. Naik School – 0 mins
+                          Delhi Public School - 3 km
                         </div>
 
                         <div class="col my-2 locfec">
                           <i class="fa-solid fa-location-dot"></i>
-                          IIM Mumbai – 7 mins*
+                          Pillai College of Engineering - 5 km
                         </div>
 
                         <div class="col my-2 locfec">
                           <i class="fa-solid fa-location-dot"></i>
-                          Bombay Scottish School – 8 mins*
-                        </div>
-
-                        <div class="col my-2 locfec">
-                          <i class="fa-solid fa-location-dot"></i>
-                          IIT Powai – 7 mins*
+                          St. Joseph's High School - 2.5 km
                         </div>
                       </div>
                     </div>
@@ -703,13 +752,17 @@
                       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
                         <div class="col my-2 locfec">
                           <i class="fa-solid fa-location-dot"></i>
-                          Nirali A.M. Naik Charitable Health Care Facility– 3
-                          mins*
+                          MGM Hospital - 4 km
                         </div>
 
                         <div class="col my-2 locfec">
                           <i class="fa-solid fa-location-dot"></i>
-                          Hiranandani Hospital – 11 mins*
+                          Lifeline Hospital - 3 km
+                        </div>
+
+                        <div class="col my-2 locfec">
+                          <i class="fa-solid fa-location-dot"></i>
+                          Panacea Hospital - 3.5 km
                         </div>
                       </div>
                     </div>
@@ -726,15 +779,19 @@
                       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
                         <div class="col my-2 locfec">
                           <i class="fa-solid fa-location-dot"></i>
-                          A.M. Naik Tower – 3 mins*
+                          Orion Mall - 4 km
                         </div>
                         <div class="col my-2 locfec">
                           <i class="fa-solid fa-location-dot"></i>
-                          Galleria Shopping Mall – 10 mins
+                          Central Park Kharghar - 10 km
                         </div>
                         <div class="col my-2 locfec">
                           <i class="fa-solid fa-location-dot"></i>
-                          R City Mall – 15 mins
+                          L&T Business Park - 12 km
+                        </div>
+                        <div class="col my-2 locfec">
+                          <i class="fa-solid fa-location-dot"></i>
+                          Reliance Corporate Park - 15 km
                         </div>
                       </div>
                     </div>
@@ -755,31 +812,31 @@
               <div class="col-12 col-lg-6 p-5 about-para-container">
                 <div class="text-center">
                   <h2 class="section-heading text-white">
-                    About Delta, Bhagwati and Pyramid Group
+                    About L&T Developers
                   </h2>
 
                   <div class="text-white about-para">
                     <p>
-                      Delta, Bhagwati. and Pyramid-three renowned real estate
-                      groups with over 40 years of experience-have come together
-                      to create a formidable force in the real estate industry.
-                      This powerful collaboration is set to redefine the future
-                      Of urban development in Navi Mumbai. Each of these groups
-                      brings decades of expertise, a track record Of successful
-                      projects, and a shared vision of creating world-class,
-                      sustainable communities. Together. they are spearheading
-                      New Palm Beach, a landmark destination that promises to
-                      set new standards Of luxury, connectivity, and quality
-                      living.
+                      Established in 2011, L&T Realty is the real estate arm of
+                      Larsen and Toubro and is one of the top real estate
+                      developers in India. With an extensive portfolio spanning
+                      6.50 mn. square metres (i.e. 70 mn sq ft) across
+                      Residential, Commercial and Retail developments, the
+                      company is currently present in Mumbai, Navi Mumbai, NCR,
+                      Bengaluru, Hyderabad and Chennai. Every real estate
+                      property envisioned by L&T Realty serves as a landmark of
+                      excellence and provides customer delight at every touch
+                      point, through design innovation and operational
+                      excellence.
                     </p>
                     <span id="dots8" style="display: inline"></span>
                     <span id="more8" style="display: none">
                       <p>
-                        Delta, Bhagwati, and Pyramid are renowned real estate
-                        groups with over 40 years of trust and excellence. They
-                        have delivered 10 million sq. ft. of projects and have
-                        7.5 million sq. ft. of future developments, shaping the
-                        industry with quality and innovation.
+                        Counted among the prominent real estate developers in
+                        Mumbai, India, the business has built a reputation of
+                        standing by its promises and embracing the power of
+                        digitization and new technologies into its core strategy
+                        for growth.
                       </p>
                     </span>
                   </div>
@@ -795,7 +852,9 @@
 
               <div class="col-12 col-lg-6 p-5">
                 <div class="text-center">
-                  <h3 class="section-heading text-white">CONTACT US</h3>
+                  <h3 class="section-heading text-white">
+                    Schedule a Site Visit
+                  </h3>
                   <!-- Form -->
                   <div class="enquire-section">
                     <div class="container">
@@ -811,6 +870,7 @@
                             autocomplete="off"
                             required />
                         </div>
+
                         <div class="mb-3">
                           <label for="user_email" class="form-label"
                             >Email address</label
@@ -823,6 +883,18 @@
                             placeholder="Email Address"
                             autocomplete="off" />
                         </div>
+
+                        <div class="mb-3">
+                          <label for="date" class="form-label">Date</label>
+                          <input
+                            type="date"
+                            class="form-control inputStyle shadow-none"
+                            name="date"
+                            id="date"
+                            placeholder="Date"
+                            autocomplete="off" />
+                        </div>
+
                         <div class="mb-3">
                           <label for="contact_number" class="form-label"
                             >Phone Number</label
@@ -916,9 +988,7 @@
                 Government RERA Authorised Advertiser's:- Aristo Real Estate
                 Consultants, Registration No:- A51700036861
               </li>
-              <li>
-                <b>Site Address:</b> Airoli, Navi Mumbai, Maharashtra 400708.
-              </li>
+              <li><b>Site Address:</b> Navi Mumbai, Maharashtra 400708.</li>
             </ul>
           </small>
         </div>
@@ -1030,10 +1100,9 @@
           <!-- Modal Body -->
           <div class="modal-body">
             <div class="container text-center modal-logo">
-              <img src="img/logo/logo1.png" alt="" />
-              <img src="img/logo/logo2.png" alt="" />
-              <img src="img/logo/logo3.png" alt="" />
-              <p class="mt-2">Register Here And Avail The Best Offers!!</p>
+              <img src="img/logo/logo.svg" alt="" height="80px" />
+
+              <h5 class="mt-2">Register Here And Avail The Best Offers!!</h5>
             </div>
             <div class="container">
               <!--Enquire Form  -->
@@ -1070,6 +1139,17 @@
                         placeholder="Email Address"
                         autocomplete="off" />
                     </div>
+
+                    <!-- <div class="mb-3">
+                      <label for="date_modal" class="form-label">Date</label>
+                      <input
+                        type="date"
+                        class="form-control inputStyle shadow-none"
+                        name="date"
+                        id="date_modal"
+                        placeholder="Date"
+                        autocomplete="off" />
+                    </div> -->
 
                     <div class="mb-3">
                       <label for="contact_number_modal" class="form-label"
